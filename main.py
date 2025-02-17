@@ -9,7 +9,7 @@ class UM:
     def __init__(self, port):
         self.port = port
         self.serial = None
-        self.higher_resolution = True  # Adjust if needed
+        self.higher_resolution = True 
 
     def open(self):
         self.serial = serial.Serial(self.port, baudrate=9600, timeout=1)
